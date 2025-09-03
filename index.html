@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business For Sale — Your Business Name</title>
+  <meta name="description" content="Selling an established business. Includes domain, social pages, and official registration. Contact for details." />
+  <meta property="og:title" content="Business For Sale — Your Business Name" />
+  <meta property="og:description" content="Includes domain, social pages, and official registration." />
+  <meta property="og:image" content="assets/photo.jpg" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --bg: #0f172a; --fg: #0b1220; --card: #ffffff; --muted: #64748b; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #0b1220; background: radial-gradient(1200px 800px at 50% -20%, #1e293b, #0f172a);
+    }
+    .wrap { max-width: 940px; margin: 24px auto 64px; padding: 16px; }
+    .card {
+      background: var(--card); border-radius: 24px; overflow: hidden;
+      box-shadow: 0 20px 45px rgba(2,6,23,.35);
+      border: 1px solid rgba(2,6,23,.08);
+    }
+    .hero { width: 100%; display: block; }
+    .pad { padding: 28px; }
+    .title { font-size: 32px; margin: 0 0 6px; line-height: 1.2; }
+    .domain { font-size: 22px; color: #0ea5e9; margin: 0 0 12px; word-break: break-word; }
+    .lead { color: var(--muted); margin: 0 0 16px; }
+    ul { margin: 12px 0 20px; padding-left: 18px; }
+    li { margin: 6px 0; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 12px 18px; border-radius: 999px; text-decoration: none; font-weight: 600;
+      border: 1px solid #0ea5e9;
+    }
+    .btn.primary { background: #0ea5e9; color: white; }
+    .btn.ghost { color: #0ea5e9; background: transparent; }
+    .footer { text-align: center; color: #94a3b8; font-size: 13px; margin-top: 20px; }
+    .note { background: #f8fafc; border: 1px dashed #cbd5e1; padding: 12px 14px; border-radius: 14px; font-size: 14px; color: #334155; }
+    .small { font-size: 13px; color: #64748b; }
+    @media (max-width: 520px) {
+      .title { font-size: 26px; }
+      .domain { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <img class="hero" src="assets/photo.jpg" alt="Business preview" />
+      <div class="pad">
+        <!-- EDIT: headline -->
+        <h1 class="title">Business For Sale</h1>
+        <!-- EDIT: your domain / brand -->
+        <p class="domain"><strong>YourDomain.com</strong></p>
+        <!-- EDIT: short pitch -->
+        <p class="lead">Established online business. Reason for sale: <em>Add brief reason here.</em></p>
+
+        <!-- EDIT: what's included -->
+        <h3>What’s included</h3>
+        <ul>
+          <li>Domain name: <strong>YourDomain.com</strong></li>
+          <li>Social pages: Facebook, Instagram (handles here)</li>
+          <li>Official business registration documents</li>
+          <li>Existing website content / assets (if any)</li>
+          <li>Email addresses (optional)</li>
+        </ul>
+
+        <!-- EDIT: price and contact -->
+        <div class="note">
+          <p><strong>Asking price:</strong> LKR 0 (or best offer)</p>
+          <p class="small">Open to reasonable offers. Serious buyers only.</p>
+        </div>
+
+        <div class="cta-row" style="margin-top:14px;">
+          <!-- Replace tel/mail/wa links below -->
+          <a class="btn primary" href="tel:+94XXXXXXXXX">Call Now</a>
+          <a class="btn ghost" href="mailto:you@example.com?subject=Business%20Sale%20Enquiry">Email</a>
+          <a class="btn ghost" href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+
+        <p class="footer">© <span id="y"></span> Your Business Name</p>
+      </div>
+    </div>
+    <p class="footer small">To update this page later, edit <code>index.html</code> in your GitHub repo.</p>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
